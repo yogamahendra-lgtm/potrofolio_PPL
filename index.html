@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Digital PPG Prajabatan 2025 - Ayu Lestari, S.Pd.</title>
+    
+    <!-- Google Fonts: Playfair Display & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f2f8f5',
+                            100: '#e1efe8',
+                            600: '#2d6a4f',
+                            700: '#1b4332',
+                            800: '#081c15'
+                        },
+                        accent: {
+                            500: '#d4af37', // Gold accent
+                            600: '#b89228'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .typewriter::after {
+            content: '|';
+            animation: blink 0.7s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        /* Glassmorphism utility */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .dark .glass-nav {
+            background: rgba(8, 28, 21, 0.85);
+        }
+    </style>
+</head>
+<body class="bg-primary-50 text-slate-800 font-sans transition-colors duration-300 dark:bg-primary-800 dark:text-primary-50">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-300 glass-nav border-b border-primary-100 dark:border-primary-700 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-full bg-primary-600 flex items-center justify-center text-white shadow-md">
+                        <span class="font-serif font-bold text-lg">AL</span>
+                    </div>
+                    <div>
+                        <span class="font-serif font-bold text-lg sm:text-xl tracking-tight text-primary-700 dark:text-primary-100">Ayu Lestari, S.Pd.</span>
+                        <p class="text-xs text-primary-600 dark:text-accent-500 font-medium tracking-wide">PORTFOLIO PPG 2025</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="#beranda" class="text-slate-600 dark:text-primary-100 hover:text-primary-600 dark:hover:text-accent-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">Beranda</a>
+                    <a href="#profil" class="text-slate-600 dark:text-primary-100 hover:text-primary-600 dark:hover:text-accent-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">Profil</a>
+                    <a href="#artefak" class="text-slate-600 dark:text-primary-100 hover:text-primary-600 dark:hover:text-accent-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">Artefak</a>
+                    <a href="#refleksi" class="text-slate-600 dark:text-primary-100 hover:text-primary-600 dark:hover:text-accent-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">Refleksi</a>
+                    <a href="#dokumentasi" class="text-slate-600 dark:text-primary-100 hover:text-primary-600 dark:hover:text-accent-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">Dokumentasi</a>
+                    <a href="#kontak" class="text-slate-600 dark:text-primary-100 hover:text-primary-600 dark:hover:text-accent-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">Kontak</a>
+                    
+                    <!-- Mode Gelap Toggle -->
+                    <button onclick="toggleDarkMode()" class="p-2 rounded-full text-slate-600 dark:text-primary-100 hover:bg-primary-100 dark:hover:bg-primary-700 transition-colors focus:outline-none" aria-label="Toggle Theme">
+                        <i id="theme-icon" class="fa-solid fa-moon text-lg"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center md:hidden space-x-2">
+                    <button onclick="toggleDarkMode()" class="p-2 rounded-full text-slate-600 dark:text-primary-100 hover:bg-primary-100 dark:hover:bg-primary-700 transition-colors focus:outline-none" aria-label="Toggle Theme">
+                        <i id="theme-icon-mobile" class="fa-solid fa-moon text-lg"></i>
+                    </button>
+                    <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="inline-flex items-center justify-center p-2 rounded-md text-slate-600 dark:text-primary-100 hover:text-primary-600 focus:outline-none" aria-expanded="false">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-primary-100 dark:border-primary-700 bg-white dark:bg-primary-800 transition-all duration-300">
+            <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+                <a href="#beranda" onclick="toggleMobileMenu()" class="block text-slate-700 dark:text-primary-100 hover:bg-primary-50 dark:hover:bg-primary-700 px-3 py-2 rounded-md text-base font-medium">Beranda</a>
+                <a href="#profil" onclick="toggleMobileMenu()" class="block text-slate-700 dark:text-primary-100 hover:bg-primary-50 dark:hover:bg-primary-700 px-3 py-2 rounded-md text-base font-medium">Profil</a>
+                <a href="#artefak" onclick="toggleMobileMenu()" class="block text-slate-700 dark:text-primary-100 hover:bg-primary-50 dark:hover:bg-primary-700 px-3 py-2 rounded-md text-base font-medium">Artefak</a>
+                <a href="#refleksi" onclick="toggleMobileMenu()" class="block text-slate-700 dark:text-primary-100 hover:bg-primary-50 dark:hover:bg-primary-700 px-3 py-2 rounded-md text-base font-medium">Refleksi</a>
+                <a href="#dokumentasi" onclick="toggleMobileMenu()" class="block text-slate-700 dark:text-primary-100 hover:bg-primary-50 dark:hover:bg-primary-700 px-3 py-2 rounded-md text-base font-medium">Dokumentasi</a>
+                <a href="#kontak" onclick="toggleMobileMenu()" class="block text-slate-700 dark:text-primary-100 hover:bg-primary-50 dark:hover:bg-primary-700 px-3 py-2 rounded-md text-base font-medium">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="beranda" class="pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Text -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-emerald-100 dark:bg-emerald-950/50 text-emerald-800 dark:text-emerald-300">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        Calon Guru Profesional 2025
+                    </span>
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+                        Halo, Saya Ayu Lestari.<br>
+                        <span class="text-primary-600 dark:text-accent-500 typewriter" id="typewriter"></span>
+                    </h1>
+                    <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        Portofolio Digital ini mendokumentasikan perjalanan reflektif, artefak pembelajaran terbaik, dan inovasi saya selama mengikuti Pendidikan Profesi Guru (PPG) Prajabatan 2025.
+                    </p>
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#artefak" class="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5">
+                            Lihat Artefak Pembelajaran
+                        </a>
+                        <a href="#profil" class="px-6 py-3 border border-primary-600 dark:border-accent-500 text-primary-600 dark:text-accent-500 hover:bg-primary-100 dark:hover:bg-primary-700/30 font-medium rounded-lg transition-all hover:-translate-y-0.5">
+                            Kenali Lebih Dekat
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image Grid -->
+                <div class="lg:col-span-5 relative flex justify-center">
+                    <!-- Elegant Background Blobs -->
+                    <div class="absolute w-72 h-72 bg-emerald-200 dark:bg-emerald-900/30 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob top-0 -left-4"></div>
+                    <div class="absolute w-72 h-72 bg-amber-100 dark:bg-amber-900/20 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob animation-delay-2000 bottom-0 -right-4"></div>
+                    
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden border-8 border-white dark:border-primary-700 shadow-2xl transition-transform duration-500 hover:scale-[1.02]">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop" 
+                             alt="Ayu Lestari, S.Pd." 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://placehold.co/600x600/2d6a4f/ffffff?text=Ayu+Lestari+S.Pd'">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Profil & Visi Misi Section -->
+    <section id="profil" class="py-20 bg-white dark:bg-primary-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs uppercase font-semibold tracking-widest text-primary-600 dark:text-accent-500">Mengenal Guru</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2">Identitas & Filosofi Pendidikan</h2>
+                <div class="w-16 h-1 bg-primary-600 dark:bg-accent-500 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+                <!-- Biodata & LPTK info -->
+                <div class="bg-primary-50 dark:bg-primary-800 p-8 rounded-2xl border border-primary-100 dark:border-primary-700 flex flex-col justify-between shadow-sm">
+                    <div>
+                        <h3 class="font-serif text-2xl font-bold mb-6 text-primary-700 dark:text-primary-100">Biodata Singkat</h3>
+                        <div class="space-y-4">
+                            <div class="flex border-b border-primary-100 dark:border-primary-700/50 pb-2">
+                                <span class="w-1/3 text-slate-500 dark:text-slate-400 font-medium">Nama Lengkap</span>
+                                <span class="w-2/3 font-semibold">Ayu Lestari, S.Pd.</span>
+                            </div>
+                            <div class="flex border-b border-primary-100 dark:border-primary-700/50 pb-2">
+                                <span class="w-1/3 text-slate-500 dark:text-slate-400 font-medium">Program Studi</span>
+                                <span class="w-2/3 font-semibold">Pendidikan Guru Sekolah Dasar (PGSD)</span>
+                            </div>
+                            <div class="flex border-b border-primary-100 dark:border-primary-700/50 pb-2">
+                                <span class="w-1/3 text-slate-500 dark:text-slate-400 font-medium">LPTK Penyelenggara</span>
+                                <span class="w-2/3 font-semibold">Universitas Pendidikan Indonesia</span>
+                            </div>
+                            <div class="flex border-b border-primary-100 dark:border-primary-700/50 pb-2">
+                                <span class="w-1/3 text-slate-500 dark:text-slate-400 font-medium">Sekolah PPL</span>
+                                <span class="w-2/3 font-semibold">SD Negeri 1 Percobaan</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 pt-6 border-t border-primary-100 dark:border-primary-700">
+                        <h4 class="font-serif text-xl font-bold mb-3 text-slate-700 dark:text-slate-200">
+                            <i class="fa-solid fa-quote-left text-primary-600 dark:text-accent-500 mr-2"></i>
+                            Pendidikan Berpihak pada Murid
+                        </h4>
+                        <p class="text-sm italic text-slate-600 dark:text-slate-300 leading-relaxed">
+                            "Menuntun segala kodrat yang ada pada anak-anak, agar mereka dapat mencapai keselamatan dan kebahagiaan yang setinggi-tingginya baik sebagai manusia maupun sebagai anggota masyarakat."
+                        </p>
+                        <p class="text-xs font-bold mt-2 text-right text-primary-600 dark:text-accent-500">- Ki Hajar Dewantara</p>
+                    </div>
+                </div>
+
+                <!-- Visi & Misi Card -->
+                <div class="bg-primary-600 text-white p-8 rounded-2xl shadow-xl flex flex-col justify-center relative overflow-hidden">
+                    <!-- Background pattern overlay -->
+                    <div class="absolute right-0 top-0 opacity-10 transform translate-x-12 -translate-y-12">
+                        <i class="fa-solid fa-graduation-cap text-9xl"></i>
+                    </div>
+                    
+                    <h3 class="font-serif text-2xl font-bold mb-6 text-accent-500">Visi & Misi Guru Profesional</h3>
+                    
+                    <div class="space-y-6 relative z-10">
+                        <div>
+                            <span class="text-xs uppercase tracking-widest text-emerald-200 font-bold block mb-1">Visi Pribadi</span>
+                            <p class="text-lg font-serif leading-relaxed italic">
+                                "Menjadi pendidik inspiratif yang berpihak pada murid, adaptif terhadap perkembangan teknologi, serta mampu menumbuhkan karakter Profil Pelajar Pancasila di setiap sanubari peserta didik."
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <span class="text-xs uppercase tracking-widest text-emerald-200 font-bold block mb-2">Misi Utama</span>
+                            <ul class="space-y-2 text-sm text-emerald-50">
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-regular fa-circle-check text-accent-500 mt-1"></i>
+                                    <span>Merancang pembelajaran interaktif dan inklusif berbasis pendekatan TaRL dan CRT.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-regular fa-circle-check text-accent-500 mt-1"></i>
+                                    <span>Menyajikan media pembelajaran kontekstual yang ramah anak.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-regular fa-circle-check text-accent-500 mt-1"></i>
+                                    <span>Secara konsisten mengevaluasi proses pengajaran dengan refleksi berkelanjutan.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Artifacts Section -->
+    <section id="artefak" class="py-20 bg-primary-50 dark:bg-primary-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs uppercase font-semibold tracking-widest text-primary-600 dark:text-accent-500">Dokumen Terbaik</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2">Artefak Pembelajaran Terpilih</h2>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">Kumpulan RPP/Modul Ajar, Asesmen, dan Projek Kepemimpinan yang dibuat selama PPG Prajabatan.</p>
+                <div class="w-16 h-1 bg-primary-600 dark:bg-accent-500 mx-auto mt-4"></div>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-2 mb-10">
+                <button onclick="filterArtefak('all')" id="tab-all" class="artefak-tab active px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all shadow-sm bg-primary-600 text-white dark:bg-accent-500 dark:text-slate-950">
+                    Semua Artefak
+                </button>
+                <button onclick="filterArtefak('modul')" id="tab-modul" class="artefak-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all shadow-sm bg-white text-slate-700 dark:bg-primary-700 dark:text-primary-100 hover:bg-primary-100 dark:hover:bg-primary-600">
+                    Modul Ajar / RPP
+                </button>
+                <button onclick="filterArtefak('media')" id="tab-media" class="artefak-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all shadow-sm bg-white text-slate-700 dark:bg-primary-700 dark:text-primary-100 hover:bg-primary-100 dark:hover:bg-primary-600">
+                    Bahan & Media Ajar
+                </button>
+                <button onclick="filterArtefak('asesmen')" id="tab-asesmen" class="artefak-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all shadow-sm bg-white text-slate-700 dark:bg-primary-700 dark:text-primary-100 hover:bg-primary-100 dark:hover:bg-primary-600">
+                    Asesmen & Evaluasi
+                </button>
+                <button onclick="filterArtefak('projek')" id="tab-projek" class="artefak-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all shadow-sm bg-white text-slate-700 dark:bg-primary-700 dark:text-primary-100 hover:bg-primary-100 dark:hover:bg-primary-600">
+                    Projek Kepemimpinan
+                </button>
+            </div>
+
+            <!-- Artifacts Grid -->
+            <div id="artefak-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1: Modul Ajar -->
+                <div class="artefak-item modul bg-white dark:bg-primary-700 rounded-2xl border border-primary-100 dark:border-primary-600 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="p-6">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-400 flex items-center justify-center mb-5">
+                            <i class="fa-solid fa-book-open text-xl"></i>
+                        </div>
+                        <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">Modul Ajar (TaRL)</span>
+                        <h3 class="font-serif text-xl font-bold mt-2 mb-3">Modul Ajar IPAS Kelas IV - Siklus Air</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-300 leading-relaxed mb-6">
+                            Modul ajar berdiferensiasi yang memetakan kesiapan belajar (Teaching at the Right Level) serta memanfaatkan pembelajaran luar kelas.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-primary-600">
+                            <span class="text-xs text-slate-400">PPL I Siklus II</span>
+                            <button onclick="openArtifactModal('modul-ipas')" class="text-xs font-bold text-primary-600 dark:text-accent-500 hover:underline flex items-center gap-1">
+                                Lihat Dokumen <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Bahan Ajar -->
+                <div class="artefak-item media bg-white dark:bg-primary-700 rounded-2xl border border-primary-100 dark:border-primary-600 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="p-6">
+                        <div class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-950/30 text-amber-600 dark:text-amber-400 flex items-center justify-center mb-5">
+                            <i class="fa-solid fa-photo-film text-xl"></i>
+                        </div>
+                        <span class="text-xs font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider">Bahan & Media Ajar</span>
+                        <h3 class="font-serif text-xl font-bold mt-2 mb-3">Media Interaktif Wordwall & LKPD Kreatif</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-300 leading-relaxed mb-6">
+                            Integrasi model gamifikasi untuk meningkatkan keterlibatan siswa di kelas rendah saat proses pembelajaran matematika.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-primary-600">
+                            <span class="text-xs text-slate-400">Teknologi Baru Pembelajaran</span>
+                            <button onclick="openArtifactModal('media-wordwall')" class="text-xs font-bold text-primary-600 dark:text-accent-500 hover:underline flex items-center gap-1">
+                                Lihat Dokumen <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Asesmen -->
+                <div class="artefak-item asesmen bg-white dark:bg-primary-700 rounded-2xl border border-primary-100 dark:border-primary-600 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="p-6">
+                        <div class="w-12 h-12 rounded-xl bg-rose-100 dark:bg-rose-950/30 text-rose-600 dark:text-rose-400 flex items-center justify-center mb-5">
+                            <i class="fa-solid fa-clipboard-check text-xl"></i>
+                        </div>
+                        <span class="text-xs font-bold text-rose-600 dark:text-rose-400 uppercase tracking-wider">Asesmen & Evaluasi</span>
+                        <h3 class="font-serif text-xl font-bold mt-2 mb-3">Instrumen Diagnostic & Rubrik Formatif</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-300 leading-relaxed mb-6">
+                            Penilaian menyeluruh mencakup ranah kognitif, afektif, dan psikomotorik yang diselaraskan dengan kebutuhan asesmen modern.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-primary-600">
+                            <span class="text-xs text-slate-400">Prinsip Pembelajaran Asesmen</span>
+                            <button onclick="openArtifactModal('asesmen-diagnostic')" class="text-xs font-bold text-primary-600 dark:text-accent-500 hover:underline flex items-center gap-1">
+                                Lihat Dokumen <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Projek Kepemimpinan -->
+                <div class="artefak-item projek bg-white dark:bg-primary-700 rounded-2xl border border-primary-100 dark:border-primary-600 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="p-6">
+                        <div class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-5">
+                            <i class="fa-solid fa-people-roof text-xl"></i>
+                        </div>
+                        <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">Projek Kepemimpinan II</span>
+                        <h3 class="font-serif text-xl font-bold mt-2 mb-3">Pojok Baca Ramah Anak "Buku Jendela Dunia"</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-300 leading-relaxed mb-6">
+                            Program pengabdian masyarakat guna menginisiasi pembuatan rak baca serta pembiasaan literasi 15 menit sebelum sekolah dimulai.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-primary-600">
+                            <span class="text-xs text-slate-400">Projek Kepemimpinan</span>
+                            <button onclick="openArtifactModal('projek-literasi')" class="text-xs font-bold text-primary-600 dark:text-accent-500 hover:underline flex items-center gap-1">
+                                Lihat Dokumen <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Modul Ajar (CRT) -->
+                <div class="artefak-item modul bg-white dark:bg-primary-700 rounded-2xl border border-primary-100 dark:border-primary-600 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="p-6">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-400 flex items-center justify-center mb-5">
+                            <i class="fa-solid fa-earth-asia text-xl"></i>
+                        </div>
+                        <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">Modul Ajar (CRT)</span>
+                        <h3 class="font-serif text-xl font-bold mt-2 mb-3">Modul Ajar SBdP Kelas V - Kesenian Lokal</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-300 leading-relaxed mb-6">
+                            Pendekatan Culturally Responsive Pedagogy (CRT) yang mengaitkan seni batik tradisional daerah ke dalam pembelajaran harian kelas.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-primary-600">
+                            <span class="text-xs text-slate-400">PPL II Siklus I</span>
+                            <button onclick="openArtifactModal('modul-crt')" class="text-xs font-bold text-primary-600 dark:text-accent-500 hover:underline flex items-center gap-1">
+                                Lihat Dokumen <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6: Penelitian Tindakan Kelas -->
+                <div class="artefak-item asesmen bg-white dark:bg-primary-700 rounded-2xl border border-primary-100 dark:border-primary-600 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="p-6">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-100 dark:bg-indigo-950/30 text-indigo-600 dark:text-indigo-400 flex items-center justify-center mb-5">
+                            <i class="fa-solid fa-microscope text-xl"></i>
+                        </div>
+                        <span class="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">PTK / Best Practice</span>
+                        <h3 class="font-serif text-xl font-bold mt-2 mb-3">Best Practice Pembelajaran Metode STAR</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-300 leading-relaxed mb-6">
+                            Laporan analisis hasil inovasi pembelajaran bertema Situasi, Tantangan, Aksi, Refleksi terhadap penanganan kemandirian belajar siswa.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-primary-600">
+                            <span class="text-xs text-slate-400">Seminar Pendidikan</span>
+                            <button onclick="openArtifactModal('best-practice')" class="text-xs font-bold text-primary-600 dark:text-accent-500 hover:underline flex items-center gap-1">
+                                Lihat Dokumen <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Reflective Journal Section (Model 4F) -->
+    <section id="refleksi" class="py-20 bg-white dark:bg-primary-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs uppercase font-semibold tracking-widest text-primary-600 dark:text-accent-500">Proses Berpikir</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2">Jurnal Refleksi Model 4F</h2>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">Sebuah rekam jejak introspektif dalam mentransformasi kemampuan diri menjadi pendidik profesional.</p>
+                <div class="w-16 h-1 bg-primary-600 dark:bg-accent-500 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                <!-- Fact Card -->
+                <div class="bg-primary-50 dark:bg-primary-800 p-8 rounded-2xl border-l-4 border-emerald-600 dark:border-emerald-500 shadow-sm transition-all duration-300 hover:shadow-md">
+                    <span class="font-serif text-5xl font-bold text-emerald-200 dark:text-emerald-950">F1</span>
+                    <h3 class="font-serif text-xl font-bold mt-2 mb-4 text-emerald-800 dark:text-emerald-300">Facts (Peristiwa)</h3>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Saat melaksanakan PPL I, saya mendapati keanekaragaman tingkat pemahaman anak yang sangat lebar di kelas IV. Banyak siswa pasif karena gaya mengajar satu arah konvensional.
+                    </p>
+                </div>
+
+                <!-- Feeling Card -->
+                <div class="bg-primary-50 dark:bg-primary-800 p-8 rounded-2xl border-l-4 border-amber-500 shadow-sm transition-all duration-300 hover:shadow-md">
+                    <span class="font-serif text-5xl font-bold text-amber-100 dark:text-amber-950">F2</span>
+                    <h3 class="font-serif text-xl font-bold mt-2 mb-4 text-amber-800 dark:text-amber-400">Feelings (Perasaan)</h3>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Awalnya saya merasa cemas dan kurang percaya diri apakah strategi pembelajaran berdiferensiasi saya akan berhasil dan tidak malah membuat gaduh kelas.
+                    </p>
+                </div>
+
+                <!-- Findings Card -->
+                <div class="bg-primary-50 dark:bg-primary-800 p-8 rounded-2xl border-l-4 border-blue-500 shadow-sm transition-all duration-300 hover:shadow-md">
+                    <span class="font-serif text-5xl font-bold text-blue-100 dark:text-blue-950">F3</span>
+                    <h3 class="font-serif text-xl font-bold mt-2 mb-4 text-blue-800 dark:text-blue-400">Findings (Pembelajaran)</h3>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Saya mempelajari bahwa memetakan minat (profil belajar) anak memberikan dorongan belajar alami yang luar biasa. Anak merasa dihargai dengan materi yang sesuai porsinya.
+                    </p>
+                </div>
+
+                <!-- Future Card -->
+                <div class="bg-primary-50 dark:bg-primary-800 p-8 rounded-2xl border-l-4 border-rose-500 shadow-sm transition-all duration-300 hover:shadow-md">
+                    <span class="font-serif text-5xl font-bold text-rose-100 dark:text-rose-950">F4</span>
+                    <h3 class="font-serif text-xl font-bold mt-2 mb-4 text-rose-800 dark:text-rose-400">Future (Penerapan)</h3>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Kedepannya, saya berkomitmen untuk melakukan asesmen diagnostik di awal semester, rajin merancang media digital interaktif, dan melakukan refleksi tiap akhir sesi belajar.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ki Hajar Quotes banner -->
+            <div class="mt-12 p-8 bg-amber-50 dark:bg-emerald-950/20 rounded-2xl border border-amber-200 dark:border-emerald-900/40 text-center max-w-4xl mx-auto">
+                <p class="font-serif text-lg md:text-xl text-slate-700 dark:text-slate-200 italic">
+                    "Ing ngarsa sung tulada, Ing madya mangun karsa, Tut wuri handayani."
+                </p>
+                <span class="block text-xs uppercase tracking-wider text-slate-500 dark:text-slate-400 font-bold mt-3">Semboyan Pendidikan Indonesia - Ki Hajar Dewantara</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Gallery -->
+    <section id="dokumentasi" class="py-20 bg-primary-50 dark:bg-primary-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs uppercase font-semibold tracking-widest text-primary-600 dark:text-accent-500">Aktivitas & Galeri</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2">Dokumentasi Kegiatan PPL</h2>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">Potret interaksi pembelajaran, pelaksanaan projek kepemimpinan, dan keceriaan bersama siswa.</p>
+                <div class="w-16 h-1 bg-primary-600 dark:bg-accent-500 mx-auto mt-4"></div>
+            </div>
+
+            <!-- Dynamic Gallery Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Photo 1 -->
+                <div onclick="openGalleryLightbox('https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=800&auto=format&fit=crop', 'Pembelajaran Berbasis Projek kelompok kecil di kelas IV SD.')" class="group cursor-pointer relative overflow-hidden rounded-2xl shadow-md border border-slate-200/60 dark:border-primary-600 aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=600&auto=format&fit=crop" 
+                         alt="Pembelajaran Kelas" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                         onerror="this.src='https://placehold.co/600x450/2d6a4f/ffffff?text=Mengajar+di+Kelas'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
+                        <div class="text-white">
+                            <span class="text-xs font-semibold text-accent-500 uppercase tracking-widest">PPL I - Mengajar Terbimbing</span>
+                            <h4 class="font-serif text-base font-bold">Kolaborasi Kelompok Siswa</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 2 -->
+                <div onclick="openGalleryLightbox('https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop', 'Inisiasi taman bacaan dan penggalangan donasi buku di lingkungan SDN 1.')" class="group cursor-pointer relative overflow-hidden rounded-2xl shadow-md border border-slate-200/60 dark:border-primary-600 aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=600&auto=format&fit=crop" 
+                         alt="Projek Kepemimpinan" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                         onerror="this.src='https://placehold.co/600x450/2d6a4f/ffffff?text=Projek+Kepemimpinan'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
+                        <div class="text-white">
+                            <span class="text-xs font-semibold text-accent-500 uppercase tracking-widest">Projek Sosial - Kemasyarakatan</span>
+                            <h4 class="font-serif text-base font-bold">Pojok Baca Mandiri</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 3 -->
+                <div onclick="openGalleryLightbox('https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=800&auto=format&fit=crop', 'Sesi refleksi asyik pasca pembelajaran bersama Guru Pamong dan Dosen Pembimbing Lapangan.')" class="group cursor-pointer relative overflow-hidden rounded-2xl shadow-md border border-slate-200/60 dark:border-primary-600 aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=600&auto=format&fit=crop" 
+                         alt="Refleksi Bersama Rekan" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                         onerror="this.src='https://placehold.co/600x450/2d6a4f/ffffff?text=Kolaborasi+Reflektif'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
+                        <div class="text-white">
+                            <span class="text-xs font-semibold text-accent-500 uppercase tracking-widest">PPG - Kolaborasi Sejawat</span>
+                            <h4 class="font-serif text-base font-bold">Diskusi Reflektif Mandiri</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact and Guest Book -->
+    <section id="kontak" class="py-20 bg-white dark:bg-primary-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact info (4 cols) -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs uppercase font-semibold tracking-widest text-primary-600 dark:text-accent-500">Hubungi Saya</span>
+                    <h2 class="font-serif text-3xl font-bold">Mari Berdiskusi & Berkolaborasi</h2>
+                    <p class="text-sm text-slate-500 dark:text-slate-300 leading-relaxed">
+                        Saran konstruktif, ajakan diskusi pendidikan, serta tawaran kolaborasi pengajaran kreatif sangat saya nantikan demi masa depan murid yang lebih cerah.
+                    </p>
+                    
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-primary-100 dark:bg-primary-700 text-primary-600 dark:text-primary-100 flex items-center justify-center shadow-sm">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block">Kirim Surel</span>
+                                <a href="mailto:ayu.lestari@guru.id" class="text-sm font-semibold hover:underline">ayu.lestari@guru.id</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-primary-100 dark:bg-primary-700 text-primary-600 dark:text-primary-100 flex items-center justify-center shadow-sm">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block">Jejaring Sosial</span>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold hover:underline">Ayu Lestari (S.Pd)</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-primary-100 dark:bg-primary-700 text-primary-600 dark:text-primary-100 flex items-center justify-center shadow-sm">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block">Domisili PPL</span>
+                                <span class="text-sm font-semibold text-slate-700 dark:text-slate-200">Kota Bandung, Jawa Barat</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guestbook Form (7 cols) -->
+                <div class="lg:col-span-7 bg-primary-50 dark:bg-primary-800 p-8 rounded-2xl border border-primary-100 dark:border-primary-700 shadow-sm">
+                    <h3 class="font-serif text-2xl font-bold mb-6 text-slate-700 dark:text-slate-100">Buku Tamu & Aspirasi</h3>
+                    
+                    <form id="feedback-form" onsubmit="submitFeedback(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="form-name" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 mb-1">Nama Pengunjung</label>
+                                <input type="text" id="form-name" required class="w-full px-4 py-2.5 rounded-lg border border-slate-200 dark:border-primary-600 bg-white dark:bg-primary-700 text-sm focus:outline-none focus:ring-2 focus:ring-primary-600 dark:focus:ring-accent-500">
+                            </div>
+                            <div>
+                                <label for="form-role" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 mb-1">Asal Instansi / Jabatan</label>
+                                <input type="text" id="form-role" placeholder="Contoh: Guru Pamong / Rekan PPG" class="w-full px-4 py-2.5 rounded-lg border border-slate-200 dark:border-primary-600 bg-white dark:bg-primary-700 text-sm focus:outline-none focus:ring-2 focus:ring-primary-600 dark:focus:ring-accent-500">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="form-comment" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 mb-1">Pesan & Umpan Balik</label>
+                            <textarea id="form-comment" rows="4" required placeholder="Tuliskan apresiasi, masukan, atau ajakan berkolaborasi di sini..." class="w-full px-4 py-2.5 rounded-lg border border-slate-200 dark:border-primary-600 bg-white dark:bg-primary-700 text-sm focus:outline-none focus:ring-2 focus:ring-primary-600 dark:focus:ring-accent-500"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full sm:w-auto px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg transition-all shadow hover:shadow-md">
+                            Kirim Aspirasi <i class="fa-solid fa-paper-plane ml-1.5 text-xs"></i>
+                        </button>
+                    </form>
+
+                    <!-- Feedback Output List (Real-time Simulation) -->
+                    <div class="mt-8 pt-6 border-t border-slate-200 dark:border-primary-700">
+                        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Umpan Balik Terbaru</h4>
+                        <div id="feedback-list" class="space-y-4 max-h-52 overflow-y-auto pr-2">
+                            <!-- Pre-filled Sample Message -->
+                            <div class="p-4 bg-white dark:bg-primary-700/50 rounded-xl border border-slate-100 dark:border-primary-600/30">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm font-semibold text-primary-700 dark:text-accent-500">Drs. H. Mulyana, M.Pd.</span>
+                                    <span class="text-[10px] text-slate-400">Guru Pamong SD N 1</span>
+                                </div>
+                                <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                                    "Ayu sangat terampil dalam memetakan level belajar siswa menggunakan metode TaRL. Terus pertahankan semangat belajarnya!"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-primary-800 text-emerald-100 py-12 border-t border-primary-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <h3 class="font-serif text-2xl font-bold tracking-tight text-white">Ayu Lestari, S.Pd.</h3>
+            <p class="text-xs text-emerald-300 uppercase tracking-widest max-w-md mx-auto leading-relaxed">
+                Pendidikan Profesi Guru (PPG) Prajabatan Gelombang I Tahun 2025
+            </p>
+            <p class="text-[11px] text-slate-400">
+                &copy; 2026 Ayu Lestari. Seluruh Hak Cipta Dilindungi. <br>Dibuat untuk portofolio akhir kelulusan PPG Prajabatan 2025.
+            </p>
+            <div class="flex justify-center space-x-4 pt-2">
+                <a href="#" class="w-8 h-8 rounded-full bg-primary-700 hover:bg-accent-500 hover:text-slate-900 transition-colors flex items-center justify-center text-sm" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="w-8 h-8 rounded-full bg-primary-700 hover:bg-accent-500 hover:text-slate-900 transition-colors flex items-center justify-center text-sm" aria-label="Youtube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#" class="w-8 h-8 rounded-full bg-primary-700 hover:bg-accent-500 hover:text-slate-900 transition-colors flex items-center justify-center text-sm" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Dynamic Overlay Modals -->
+    <!-- Modals for Artifact Details -->
+    <div id="modal-container" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-sm px-4 hidden transition-opacity duration-300 opacity-0">
+        <div class="bg-white dark:bg-primary-800 rounded-2xl w-full max-w-2xl max-h-[85vh] overflow-y-auto shadow-2xl border border-primary-100 dark:border-primary-700 transform scale-95 transition-transform duration-300" id="modal-content">
+            <!-- Modal Head -->
+            <div class="p-6 border-b border-slate-100 dark:border-primary-700 flex justify-between items-center bg-primary-50 dark:bg-primary-800">
+                <h3 class="font-serif text-2xl font-bold text-primary-700 dark:text-accent-500" id="modal-title">Judul Modul</h3>
+                <button onclick="closeArtifactModal()" class="text-slate-400 hover:text-slate-600 dark:hover:text-white text-lg">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <!-- Modal Body -->
+            <div class="p-6 space-y-6" id="modal-body">
+                <!-- Content injected dynamically -->
+            </div>
+            <!-- Modal Foot -->
+            <div class="p-6 border-t border-slate-100 dark:border-primary-700 flex justify-end gap-3 bg-slate-50 dark:bg-primary-800">
+                <button onclick="closeArtifactModal()" class="px-4 py-2 bg-slate-200 dark:bg-primary-700 hover:bg-slate-300 dark:hover:bg-primary-600 text-slate-700 dark:text-slate-200 rounded-lg text-sm font-medium transition-colors">
+                    Tutup
+                </button>
+                <button onclick="mockDownload()" class="px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg text-sm font-medium transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-download"></i> Unduh PDF
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox for Gallery Photos -->
+    <div id="lightbox-container" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-slate-950/90 px-4 hidden transition-opacity duration-300 opacity-0" onclick="closeGalleryLightbox()">
+        <div class="max-w-4xl max-h-[75vh] relative" onclick="event.stopPropagation()">
+            <img src="" id="lightbox-img" class="max-w-full max-h-[75vh] object-contain rounded-lg border-2 border-slate-700" alt="Lightbox">
+            <button onclick="closeGalleryLightbox()" class="absolute -top-10 right-0 text-white text-2xl hover:text-accent-500 transition-colors">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <p id="lightbox-caption" class="text-slate-300 text-sm mt-4 text-center max-w-md italic font-light"></p>
+    </div>
+
+    <!-- Success Feedback Alert Dialog -->
+    <div id="toast" class="fixed bottom-5 right-5 z-50 bg-emerald-600 text-white px-5 py-3 rounded-xl shadow-xl flex items-center gap-3 transform translate-y-10 opacity-0 transition-all duration-300">
+        <i class="fa-solid fa-circle-check text-lg"></i>
+        <div>
+            <span class="text-sm font-semibold">Terkirim</span>
+            <p class="text-xs text-emerald-100">Umpan balik telah ditambahkan ke buku tamu.</p>
+        </div>
+    </div>
+
+    <!-- Custom Web App Logic (JS) -->
+    <script>
+        // Data Store for Artefak Details (modals)
+        const artefakDetails = {
+            'modul-ipas': {
+                title: 'Modul Ajar IPAS Kelas IV - Siklus Air',
+                category: 'Modul Ajar / RPP',
+                content: `
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4 text-sm bg-primary-50 dark:bg-primary-700/40 p-4 rounded-xl">
+                            <div><strong>Metodologi:</strong> TaRL (Teaching at the Right Level)</div>
+                            <div><strong>Materi Pokok:</strong> Siklus Hidrologi Sederhana</div>
+                            <div><strong>Siswa:</strong> Kelas IV SD N 1 Percobaan</div>
+                            <div><strong>Aspek Diferensiasi:</strong> Konten & Produk</div>
+                        </div>
+                        <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                            Modul ini disusun untuk menuntaskan masalah gap kognitif yang ekstrem di kelas IV. Siswa dikelompokkan menjadi tiga tingkat kemampuan berdasarkan hasil asesmen diagnostik di awal pembelajaran.
+                        </p>
+                        <h4 class="font-bold text-sm text-primary-600 dark:text-accent-500">Langkah Kegiatan Inovatif:</h4>
+                        <ul class="list-disc pl-5 text-xs space-y-1.5 text-slate-600 dark:text-slate-300">
+                            <li><strong>Kelompok Perintis:</strong> Melakukan eksperimen air dalam wadah tertutup di halaman sekolah dengan asisten sebaya.</li>
+                            <li><strong>Kelompok Madya:</strong> Menganalisis gambar tahapan siklus melalui media kartu urut berkategori gambar.</li>
+                            <li><strong>Kelompok Mahir:</strong> Membuat jurnal ilmiah mini menyangkut analisis faktor yang memicu kerusakan siklus air lokal.</li>
+                        </ul>
+                    </div>
+                `
+            },
+            'media-wordwall': {
+                title: 'Media Interaktif Wordwall & LKPD Kreatif',
+                category: 'Bahan & Media Ajar',
+                content: `
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4 text-sm bg-primary-50 dark:bg-primary-700/40 p-4 rounded-xl">
+                            <div><strong>Jenis Media:</strong> Digital Gamifikasi</div>
+                            <div><strong>Mata Pelajaran:</strong> Matematika</div>
+                            <div><strong>Siswa:</strong> Kelas II SD</div>
+                            <div><strong>Platform:</strong> Wordwall & LKPD Hand-made</div>
+                        </div>
+                        <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                            Penggunaan media edukasi berbasis platform digital interaktif guna menyalurkan ketertarikan siswa kelas rendah pada konsep dasar operasi penjumlahan berulang (perkalian dasar).
+                        </p>
+                        <h4 class="font-bold text-sm text-primary-600 dark:text-accent-500">Kelebihan Implementasi:</h4>
+                        <ul class="list-disc pl-5 text-xs space-y-1.5 text-slate-600 dark:text-slate-300">
+                            <li>Anak-anak secara aktif mengoperasikan papan sentuh secara bergiliran.</li>
+                            <li>Menggunakan gambar karakter kartun lokal guna meningkatkan daya fokus.</li>
+                            <li>Desain LKPD menggunakan lipatan kertas origami pop-up yang disukai anak.</li>
+                        </ul>
+                    </div>
+                `
+            },
+            'asesmen-diagnostic': {
+                title: 'Instrumen Diagnostic & Rubrik Formatif',
+                category: 'Asesmen & Evaluasi',
+                content: `
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4 text-sm bg-primary-50 dark:bg-primary-700/40 p-4 rounded-xl">
+                            <div><strong>Kategori Asesmen:</strong> Non-Kognitif & Formatif</div>
+                            <div><strong>Metode:</strong> Observasi Perilaku & LKPD</div>
+                            <div><strong>Fokus:</strong> Penilaian Mandiri & Sebaya</div>
+                            <div><strong>Skala Nilai:</strong> Rubrik Berjenjang 1 - 4</div>
+                        </div>
+                        <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                            Sistem penilaian ini membuang paradigma lama yang terpaku pada nilai tes tertulis semata. Evaluasi dilakukan secara berkala saat aktivitas berlangsung (assessment as/for learning).
+                        </p>
+                    </div>
+                `
+            },
+            'projek-literasi': {
+                title: 'Pojok Baca Ramah Anak "Buku Jendela Dunia"',
+                category: 'Projek Kepemimpinan II',
+                content: `
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4 text-sm bg-primary-50 dark:bg-primary-700/40 p-4 rounded-xl">
+                            <div><strong>Nama Projek:</strong> Buku Jendela Dunia</div>
+                            <div><strong>Sasaran:</strong> Siswa Kelas III - V SD</div>
+                            <div><strong>Mitra Utama:</strong> Komite Sekolah & Wali Murid</div>
+                            <div><strong>Durasi Projek:</strong> 4 Minggu</div>
+                        </div>
+                        <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                            Projek Kepemimpinan ini berfokus pada perbaikan sarana membaca di pojok kelas SD N 1 Percobaan. Siswa didorong untuk membawa satu buku dari rumah untuk saling dipinjamkan.
+                        </p>
+                    </div>
+                `
+            },
+            'modul-crt': {
+                title: 'Modul Ajar SBdP Kelas V - Kesenian Lokal',
+                category: 'Modul Ajar (CRT)',
+                content: `
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4 text-sm bg-primary-50 dark:bg-primary-700/40 p-4 rounded-xl">
+                            <div><strong>Pendekatan:</strong> CRT (Culturally Responsive)</div>
+                            <div><strong>Materi:</strong> Kesenian Tradisional</div>
+                            <div><strong>Siswa:</strong> Kelas V SD</div>
+                            <div><strong>Output Siswa:</strong> Karya Batik Ikat Celup</div>
+                        </div>
+                        <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                            Mengintegrasikan kearifan lokal daerah Bandung ke dalam proses pembelajaran seni. Anak diperkenalkan dengan filosofi dibalik keunikan ragam hias daerah setempat sebelum praktik.
+                        </p>
+                    </div>
+                `
+            },
+            'best-practice': {
+                title: 'Best Practice Pembelajaran Metode STAR',
+                category: 'Seminar Pendidikan',
+                content: `
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4 text-sm bg-primary-50 dark:bg-primary-700/40 p-4 rounded-xl">
+                            <div><strong>Metode Laporan:</strong> STAR (Situasi, Tantangan, Aksi, Refleksi)</div>
+                            <div><strong>Fokus Kasus:</strong> Rendahnya Kemandirian Siswa</div>
+                            <div><strong>Hasil Riset:</strong> Kenaikan 35% Keaktifan Kelas</div>
+                            <div><strong>Dosen Pembimbing:</strong> Dr. H. Rahman, M.Pd.</div>
+                        </div>
+                        <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                            Laporan Best Practice yang memetakan strategi terbaik dalam menerapkan metode inkuiri terbimbing secara bertahap pada kelas besar di jenjang sekolah dasar.
+                        </p>
+                    </div>
+                `
+            }
+        };
+
+        // Typewriter Effect logic
+        const words = ["Inovatif & Berpihak pada Siswa.", "Calon Guru SD Masa Depan.", "Adaptif Terhadap Kurikulum Merdeka."];
+        let i = 0;
+        let timer;
+
+        function typingEffect() {
+            let word = words[i].split("");
+            var loopTyping = function() {
+                if (word.length > 0) {
+                    document.getElementById('typewriter').innerHTML += word.shift();
+                } else {
+                    setTimeout(deletingEffect, 2000);
+                    return false;
+                }
+                timer = setTimeout(loopTyping, 100);
+            };
+            loopTyping();
+        }
+
+        function deletingEffect() {
+            let word = words[i].split("");
+            var loopDeleting = function() {
+                if (word.length > 0) {
+                    word.pop();
+                    document.getElementById('typewriter').innerHTML = word.join("");
+                } else {
+                    if (words.length > (i + 1)) {
+                        i++;
+                    } else {
+                        i = 0;
+                    }
+                    setTimeout(typingEffect, 500);
+                    return false;
+                }
+                timer = setTimeout(loopDeleting, 60);
+            };
+            loopDeleting();
+        }
+
+        // Initialize typing on load
+        window.onload = function() {
+            typingEffect();
+        };
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Dark Mode Toggle
+        function toggleDarkMode() {
+            const html = document.documentElement;
+            html.classList.toggle('dark');
+            
+            const isDark = html.classList.contains('dark');
+            localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+            
+            // Sync Icons
+            const icon = document.getElementById('theme-icon');
+            const iconMobile = document.getElementById('theme-icon-mobile');
+            if (isDark) {
+                icon.className = 'fa-solid fa-sun text-lg';
+                iconMobile.className = 'fa-solid fa-sun text-lg';
+            } else {
+                icon.className = 'fa-solid fa-moon text-lg';
+                iconMobile.className = 'fa-solid fa-moon text-lg';
+            }
+        }
+
+        // Check Local Storage for Dark Mode
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.documentElement.classList.add('dark');
+            document.getElementById('theme-icon').className = 'fa-solid fa-sun text-lg';
+            document.getElementById('theme-icon-mobile').className = 'fa-solid fa-sun text-lg';
+        }
+
+        // Filter Artefak Grid
+        function filterArtefak(category) {
+            // Update active state in tabs
+            const tabs = document.querySelectorAll('.artefak-tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('bg-primary-600', 'text-white', 'dark:bg-accent-500', 'dark:text-slate-950');
+                tab.classList.add('bg-white', 'text-slate-700', 'dark:bg-primary-700', 'dark:text-primary-100');
+            });
+
+            const activeTab = document.getElementById(`tab-${category}`);
+            activeTab.classList.remove('bg-white', 'text-slate-700', 'dark:bg-primary-700', 'dark:text-primary-100');
+            activeTab.classList.add('bg-primary-600', 'text-white', 'dark:bg-accent-500', 'dark:text-slate-950');
+
+            // Toggle Cards
+            const items = document.querySelectorAll('.artefak-item');
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.classList.remove('hidden');
+                    // Simple pop-in animation effect
+                    item.style.opacity = '0';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                    }, 50);
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        }
+
+        // Artifact Modals
+        function openArtifactModal(key) {
+            const data = artefakDetails[key];
+            if (!data) return;
+
+            document.getElementById('modal-title').textContent = data.title;
+            document.getElementById('modal-body').innerHTML = data.content;
+
+            const modal = document.getElementById('modal-container');
+            const content = document.getElementById('modal-content');
+            
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                content.classList.remove('scale-95');
+            }, 50);
+        }
+
+        function closeArtifactModal() {
+            const modal = document.getElementById('modal-container');
+            const content = document.getElementById('modal-content');
+
+            modal.classList.add('opacity-0');
+            content.classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+        // Lightbox for Gallery
+        function openGalleryLightbox(imgSrc, captionText) {
+            const container = document.getElementById('lightbox-container');
+            const img = document.getElementById('lightbox-img');
+            const caption = document.getElementById('lightbox-caption');
+
+            img.src = imgSrc;
+            caption.textContent = captionText;
+
+            container.classList.remove('hidden');
+            setTimeout(() => {
+                container.classList.remove('opacity-0');
+            }, 50);
+        }
+
+        function closeGalleryLightbox() {
+            const container = document.getElementById('lightbox-container');
+            container.classList.add('opacity-0');
+            setTimeout(() => {
+                container.classList.add('hidden');
+            }, 300);
+        }
+
+        // Mock Download Alert
+        function mockDownload() {
+            alert("Sistem mengemulasi pengunduhan dokumen. File PDF fiktif sedang disiapkan untuk perangkat Anda.");
+        }
+
+        // Feedback / Guestbook Submit Handler
+        function submitFeedback(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('form-name').value;
+            const role = document.getElementById('form-role').value || 'Pengunjung Umum';
+            const comment = document.getElementById('form-comment').value;
+
+            // Create element card
+            const feedbackList = document.getElementById('feedback-list');
+            const newFeedback = document.createElement('div');
+            newFeedback.className = 'p-4 bg-white dark:bg-primary-700/50 rounded-xl border border-slate-100 dark:border-primary-600/30 transform transition-all duration-300 scale-95 opacity-0';
+            
+            newFeedback.innerHTML = `
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-sm font-semibold text-primary-700 dark:text-accent-500">${escapeHTML(name)}</span>
+                    <span class="text-[10px] text-slate-400">${escapeHTML(role)}</span>
+                </div>
+                <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                    "${escapeHTML(comment)}"
+                </p>
+            `;
+
+            // Insert on top
+            feedbackList.insertBefore(newFeedback, feedbackList.firstChild);
+
+            // Animate card entry
+            setTimeout(() => {
+                newFeedback.classList.remove('scale-95', 'opacity-0');
+            }, 100);
+
+            // Reset form
+            document.getElementById('feedback-form').reset();
+
+            // Trigger Toast Alert
+            const toast = document.getElementById('toast');
+            toast.classList.remove('opacity-0', 'translate-y-10');
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'translate-y-10');
+            }, 4000);
+        }
+
+        // Helper to clean inputs and prevent basic XSS
+        function escapeHTML(str) {
+            return str.replace(/[&<>'"]/g, 
+                tag => ({
+                    '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;',
+                    "'": '&#39;',
+                    '"': '&quot;'
+                }[tag] || tag)
+            );
+        }
+    </script>
+</body>
+</html>S
